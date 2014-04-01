@@ -21,7 +21,6 @@ Usually ES_HOME="/usr/share/elasticsearch" (use @whereis elastic)
 
 Create fitst index
 ==============
-
 curl -XPUT "localhost:9200/_river/mongodb/_meta" -d '
 {
 "type": "mongodb",
