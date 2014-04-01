@@ -1,9 +1,11 @@
 package com.mycompany.template.repositories;
 
+import org.springframework.data.elasticsearch.annotations.Query;
 import org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import com.mycompany.template.beans.SomeBean;
-import com.mycompany.template.repositories.custom.SomeBeanRepositoryCustom;
+
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -12,6 +14,8 @@ import com.mycompany.template.repositories.custom.SomeBeanRepositoryCustom;
  * Time: 2:27 PM
   */
 public interface SomeBeanRepository extends PagingAndSortingRepository<SomeBean, String>,
-        ElasticsearchCrudRepository<SomeBean, String>,
-        SomeBeanRepositoryCustom {
+        ElasticsearchCrudRepository<SomeBean, String> {
+
+    @Query("{\"title\" : \"?0\"}")
+    List<SomeBean> findByTitle(String title);
 }
