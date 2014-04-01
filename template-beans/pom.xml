@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>template-beans</artifactId>
-    <name>Camel Template Beans</name>
+    <name>Elastic Search Template Beans</name>
     <packaging>jar</packaging>
 
     <dependencies>

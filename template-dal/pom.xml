@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>template-dal</artifactId>
-    <name>Tempate API DAL</name>
+    <name>Elastic Search Template DAL</name>
     <description>Domain Access Layer - i.e. communicate with database, etc.</description>
 
     <properties>

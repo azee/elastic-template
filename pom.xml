@@ -6,7 +6,7 @@
     <artifactId>elastic-template</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Camel Template Project</name>
+    <name>Elastic Search Template Project</name>
     <packaging>pom</packaging>
 
     <modules>
