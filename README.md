@@ -10,7 +10,7 @@ sudo dpkg -i elasticsearch-1.1.0.deb
 
 sudo service elasticsearch start
 
-#curl http://localhost:9200
+Verify: curl http://localhost:9200
 
 2. $ES_HOME/bin/plugin -install elasticsearch/elasticsearch-mapper-attachments/1.6.0
 
@@ -22,8 +22,6 @@ Usually ES_HOME="/usr/share/elasticsearch" (use @whereis elastic)
 
 Create fitst index
 ==============
-
-
 curl -XPUT "localhost:9200/_river/mongodb/_meta" -d '
 {
 "type": "mongodb",
