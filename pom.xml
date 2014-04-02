@@ -147,6 +147,15 @@
         </dependencies>
     </dependencyManagement>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-elasticsearch</artifactId>
+            <version>1.0.0.M2</version>
+        </dependency>
+    </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
