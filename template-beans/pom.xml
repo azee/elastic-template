@@ -36,6 +36,11 @@
                         <artifactId>spring-data-mongodb</artifactId>
                         <version>${spring.data.mongodb.version}</version>
                     </dependency>
+                    <dependency>
+                        <groupId>org.springframework.data</groupId>
+                        <artifactId>spring-data-elasticsearch</artifactId>
+                        <version>1.0.0.M2</version>
+                    </dependency>
                 </dependencies>
                 <executions>
                     <execution>
