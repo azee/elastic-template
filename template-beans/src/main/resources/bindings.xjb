@@ -40,12 +40,21 @@
             </annox:annotate>
         </jaxb:bindings>
 
+        <jaxb:bindings node="xs:complexType[@name='SomeBean']">
+            <annox:annotate target="class">
+                <annox:annotate annox:class="org.springframework.data.elasticsearch.annotations.Document"
+                                indexName="somebean"/>
+            </annox:annotate>
+        </jaxb:bindings>
+
         <jaxb:bindings node="xs:complexType[@name='Property']">
             <annox:annotate target="class">
                 <annox:annotate annox:class="org.springframework.data.mongodb.core.mapping.Document"
                                 collection="template_property"/>
             </annox:annotate>
         </jaxb:bindings>
+
+
 
         <jaxb:bindings node="xs:complexType[@name='Property']/xs:sequence/xs:element[@name='id']">
             <annox:annotate target="field">
