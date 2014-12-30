@@ -48,4 +48,4 @@ curl -XGET 'http://localhost:9200/somebean/_search?q=title:SOME_TITLE'
 
 Jenkins Build
 ==============
-http://azee.people.yandex.net/job/elastic-template/
+http://azee.people.yandex.net/jenkins/job/elastic-template/
